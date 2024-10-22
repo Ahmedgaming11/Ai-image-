@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat & Image Search</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>AI Chat & Image Search <i class="fas fa-robot"></i></h1>
+        </header>
+        <main>
+            <section id="chatbox">
+                <div id="messages"></div>
+                <input type="text" id="input" placeholder="Type your message..." />
+                <button id="send">Send</button>
+            </section>
+            <section id="image-search">
+                <input type="text" id="image-query" placeholder="Search for images..." />
+                <button id="search">Search</button>
+                <div id="image-results"></div>
+            </section>
+        </main>
+    </div>
+    <script src="src/app.js"></script>
+</body>
+</html>
